@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F38C759296186D8002E1500 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C758296186D8002E1500 /* ContentView.swift */; };
+		9F38C75D296186D8002E1500 /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C75C296186D8002E1500 /* ViewControllerRepresentable.swift */; };
+		9F38C760296186D8002E1500 /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = 9F38C75F296186D8002E1500 /* Synth.aif */; };
+		9F38C762296186D8002E1500 /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C761296186D8002E1500 /* SimplePlayEngine.swift */; };
+		9F38C765296186D8002E1500 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C764296186D8002E1500 /* MIDIManager.swift */; };
+		9F38C767296186D8002E1500 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C766296186D8002E1500 /* TypeAliases.swift */; };
+		9F38C76A296186D8002E1500 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C769296186D8002E1500 /* StringHelpers.swift */; };
+		9F38C76D296186D8002E1500 /* AudioUnitHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C76C296186D8002E1500 /* AudioUnitHostModel.swift */; };
+		9F38C76F296186D8002E1500 /* AudioUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C76E296186D8002E1500 /* AudioUnitViewModel.swift */; };
+		9F38C771296186D8002E1500 /* RandoMidiShifterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C770296186D8002E1500 /* RandoMidiShifterApp.swift */; };
+		9F38C774296186D8002E1500 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F38C773296186D8002E1500 /* Preview Assets.xcassets */; };
+		9F38C776296186D9002E1500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F38C775296186D9002E1500 /* Assets.xcassets */; };
+		9F38C781296186D9002E1500 /* RandoMidiShifterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C780296186D9002E1500 /* RandoMidiShifterTests.swift */; };
+		9F38C78B296186D9002E1500 /* RandoMidiShifterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C78A296186D9002E1500 /* RandoMidiShifterUITests.swift */; };
+		9F38C78D296186D9002E1500 /* RandoMidiShifterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C78C296186D9002E1500 /* RandoMidiShifterUITestsLaunchTests.swift */; };
+		9F38C793296186D9002E1500 /* RandoMidiShifterExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9F38C792296186D9002E1500 /* RandoMidiShifterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9F38C798296186D9002E1500 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9F38C797296186D9002E1500 /* README.md */; };
+		9F38C79D296186D9002E1500 /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C79C296186D9002E1500 /* ParameterSpecBase.swift */; };
+		9F38C7A0296186D9002E1500 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C79F296186D9002E1500 /* CrossPlatform.swift */; };
+		9F38C7A2296186D9002E1500 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C7A1296186D9002E1500 /* String+Utils.swift */; };
+		9F38C7A6296186D9002E1500 /* RandoMidiShifterExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C7A5296186D9002E1500 /* RandoMidiShifterExtensionAudioUnit.mm */; };
+		9F38C7A9296186D9002E1500 /* RandoMidiShifterExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 9F38C7A8296186D9002E1500 /* RandoMidiShifterExtensionAUProcessHelper.hpp */; };
+		9F38C7AD296186D9002E1500 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C7AC296186D9002E1500 /* Parameters.swift */; };
+		9F38C7B0296186D9002E1500 /* RandoMidiShifterExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 9F38C7AF296186D9002E1500 /* RandoMidiShifterExtensionDSPKernel.hpp */; };
+		9F38C7B3296186D9002E1500 /* RandoMidiShifterExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C7B2296186D9002E1500 /* RandoMidiShifterExtensionMainView.swift */; };
+		9F38C7B5296186D9002E1500 /* MomentaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C7B4296186D9002E1500 /* MomentaryButton.swift */; };
+		9F38C7B7296186D9002E1500 /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C7B6296186D9002E1500 /* ParameterSlider.swift */; };
+		9F38C7BC296186D9002E1500 /* AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F38C7BA296186D9002E1500 /* AudioUnitViewController.xib */; };
+		9F38C7BE296186D9002E1500 /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C7BD296186D9002E1500 /* ObservableAUParameter.swift */; };
+		9F38C7C0296186D9002E1500 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C7BF296186D9002E1500 /* AudioUnitViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F38C77D296186D9002E1500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F38C74D296186D8002E1500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F38C754296186D8002E1500;
+			remoteInfo = RandoMidiShifter;
+		};
+		9F38C787296186D9002E1500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F38C74D296186D8002E1500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F38C754296186D8002E1500;
+			remoteInfo = RandoMidiShifter;
+		};
+		9F38C794296186D9002E1500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F38C74D296186D8002E1500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F38C791296186D9002E1500;
+			remoteInfo = RandoMidiShifterExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F38C7C7296186D9002E1500 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9F38C793296186D9002E1500 /* RandoMidiShifterExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9F38C755296186D8002E1500 /* RandoMidiShifter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandoMidiShifter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F38C758296186D8002E1500 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9F38C75C296186D8002E1500 /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		9F38C75F296186D8002E1500 /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
+		9F38C761296186D8002E1500 /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
+		9F38C764296186D8002E1500 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		9F38C766296186D8002E1500 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		9F38C769296186D8002E1500 /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		9F38C76C296186D8002E1500 /* AudioUnitHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitHostModel.swift; sourceTree = "<group>"; };
+		9F38C76E296186D8002E1500 /* AudioUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewModel.swift; sourceTree = "<group>"; };
+		9F38C770296186D8002E1500 /* RandoMidiShifterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandoMidiShifterApp.swift; sourceTree = "<group>"; };
+		9F38C773296186D8002E1500 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9F38C775296186D9002E1500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F38C777296186D9002E1500 /* RandoMidiShifter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RandoMidiShifter.entitlements; sourceTree = "<group>"; };
+		9F38C77C296186D9002E1500 /* RandoMidiShifterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandoMidiShifterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F38C780296186D9002E1500 /* RandoMidiShifterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandoMidiShifterTests.swift; sourceTree = "<group>"; };
+		9F38C786296186D9002E1500 /* RandoMidiShifterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandoMidiShifterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F38C78A296186D9002E1500 /* RandoMidiShifterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandoMidiShifterUITests.swift; sourceTree = "<group>"; };
+		9F38C78C296186D9002E1500 /* RandoMidiShifterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandoMidiShifterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F38C792296186D9002E1500 /* RandoMidiShifterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RandoMidiShifterExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F38C797296186D9002E1500 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9F38C79A296186D9002E1500 /* RandoMidiShifterExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandoMidiShifterExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F38C79C296186D9002E1500 /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		9F38C79F296186D9002E1500 /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		9F38C7A1296186D9002E1500 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		9F38C7A4296186D9002E1500 /* RandoMidiShifterExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandoMidiShifterExtensionAudioUnit.h; sourceTree = "<group>"; };
+		9F38C7A5296186D9002E1500 /* RandoMidiShifterExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RandoMidiShifterExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		9F38C7A8296186D9002E1500 /* RandoMidiShifterExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RandoMidiShifterExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		9F38C7AB296186D9002E1500 /* RandoMidiShifterExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandoMidiShifterExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		9F38C7AC296186D9002E1500 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		9F38C7AF296186D9002E1500 /* RandoMidiShifterExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RandoMidiShifterExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		9F38C7B2296186D9002E1500 /* RandoMidiShifterExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandoMidiShifterExtensionMainView.swift; sourceTree = "<group>"; };
+		9F38C7B4296186D9002E1500 /* MomentaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentaryButton.swift; sourceTree = "<group>"; };
+		9F38C7B6296186D9002E1500 /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		9F38C7BB296186D9002E1500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AudioUnitViewController.xib; sourceTree = "<group>"; };
+		9F38C7BD296186D9002E1500 /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		9F38C7BF296186D9002E1500 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		9F38C7C1296186D9002E1500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F38C752296186D8002E1500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F38C779296186D9002E1500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F38C783296186D9002E1500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F38C78F296186D9002E1500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F38C74C296186D8002E1500 = {
+			isa = PBXGroup;
+			children = (
+				9F38C757296186D8002E1500 /* RandoMidiShifter */,
+				9F38C77F296186D9002E1500 /* RandoMidiShifterTests */,
+				9F38C789296186D9002E1500 /* RandoMidiShifterUITests */,
+				9F38C796296186D9002E1500 /* RandoMidiShifterExtension */,
+				9F38C756296186D8002E1500 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F38C756296186D8002E1500 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C755296186D8002E1500 /* RandoMidiShifter.app */,
+				9F38C77C296186D9002E1500 /* RandoMidiShifterTests.xctest */,
+				9F38C786296186D9002E1500 /* RandoMidiShifterUITests.xctest */,
+				9F38C792296186D9002E1500 /* RandoMidiShifterExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F38C757296186D8002E1500 /* RandoMidiShifter */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C758296186D8002E1500 /* ContentView.swift */,
+				9F38C770296186D8002E1500 /* RandoMidiShifterApp.swift */,
+				9F38C775296186D9002E1500 /* Assets.xcassets */,
+				9F38C777296186D9002E1500 /* RandoMidiShifter.entitlements */,
+				9F38C75A296186D8002E1500 /* Common */,
+				9F38C76B296186D8002E1500 /* Model */,
+				9F38C772296186D8002E1500 /* Preview Content */,
+			);
+			path = RandoMidiShifter;
+			sourceTree = "<group>";
+		};
+		9F38C75A296186D8002E1500 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C766296186D8002E1500 /* TypeAliases.swift */,
+				9F38C75B296186D8002E1500 /* UI */,
+				9F38C75E296186D8002E1500 /* Audio */,
+				9F38C763296186D8002E1500 /* MIDI */,
+				9F38C768296186D8002E1500 /* String */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9F38C75B296186D8002E1500 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C75C296186D8002E1500 /* ViewControllerRepresentable.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9F38C75E296186D8002E1500 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C75F296186D8002E1500 /* Synth.aif */,
+				9F38C761296186D8002E1500 /* SimplePlayEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		9F38C763296186D8002E1500 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C764296186D8002E1500 /* MIDIManager.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		9F38C768296186D8002E1500 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C769296186D8002E1500 /* StringHelpers.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		9F38C76B296186D8002E1500 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C76C296186D8002E1500 /* AudioUnitHostModel.swift */,
+				9F38C76E296186D8002E1500 /* AudioUnitViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F38C772296186D8002E1500 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C773296186D8002E1500 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9F38C77F296186D9002E1500 /* RandoMidiShifterTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C780296186D9002E1500 /* RandoMidiShifterTests.swift */,
+			);
+			path = RandoMidiShifterTests;
+			sourceTree = "<group>";
+		};
+		9F38C789296186D9002E1500 /* RandoMidiShifterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C78A296186D9002E1500 /* RandoMidiShifterUITests.swift */,
+				9F38C78C296186D9002E1500 /* RandoMidiShifterUITestsLaunchTests.swift */,
+			);
+			path = RandoMidiShifterUITests;
+			sourceTree = "<group>";
+		};
+		9F38C796296186D9002E1500 /* RandoMidiShifterExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C797296186D9002E1500 /* README.md */,
+				9F38C7C1296186D9002E1500 /* Info.plist */,
+				9F38C799296186D9002E1500 /* Common */,
+				9F38C7AA296186D9002E1500 /* Parameters */,
+				9F38C7AE296186D9002E1500 /* DSP */,
+				9F38C7B1296186D9002E1500 /* UI */,
+			);
+			path = RandoMidiShifterExtension;
+			sourceTree = "<group>";
+		};
+		9F38C799296186D9002E1500 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C79A296186D9002E1500 /* RandoMidiShifterExtension-Bridging-Header.h */,
+				9F38C79B296186D9002E1500 /* Parameters */,
+				9F38C79E296186D9002E1500 /* Utility */,
+				9F38C7A3296186D9002E1500 /* Audio Unit */,
+				9F38C7A7296186D9002E1500 /* DSP */,
+				9F38C7B8296186D9002E1500 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9F38C79B296186D9002E1500 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C79C296186D9002E1500 /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		9F38C79E296186D9002E1500 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C79F296186D9002E1500 /* CrossPlatform.swift */,
+				9F38C7A1296186D9002E1500 /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9F38C7A3296186D9002E1500 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C7A4296186D9002E1500 /* RandoMidiShifterExtensionAudioUnit.h */,
+				9F38C7A5296186D9002E1500 /* RandoMidiShifterExtensionAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		9F38C7A7296186D9002E1500 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C7A8296186D9002E1500 /* RandoMidiShifterExtensionAUProcessHelper.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		9F38C7AA296186D9002E1500 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C7AB296186D9002E1500 /* RandoMidiShifterExtensionParameterAddresses.h */,
+				9F38C7AC296186D9002E1500 /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		9F38C7AE296186D9002E1500 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C7AF296186D9002E1500 /* RandoMidiShifterExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		9F38C7B1296186D9002E1500 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C7B2296186D9002E1500 /* RandoMidiShifterExtensionMainView.swift */,
+				9F38C7B4296186D9002E1500 /* MomentaryButton.swift */,
+				9F38C7B6296186D9002E1500 /* ParameterSlider.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9F38C7B8296186D9002E1500 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C7BD296186D9002E1500 /* ObservableAUParameter.swift */,
+				9F38C7BF296186D9002E1500 /* AudioUnitViewController.swift */,
+				9F38C7B9296186D9002E1500 /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9F38C7B9296186D9002E1500 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C7BA296186D9002E1500 /* AudioUnitViewController.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F38C754296186D8002E1500 /* RandoMidiShifter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F38C7C8296186D9002E1500 /* Build configuration list for PBXNativeTarget "RandoMidiShifter" */;
+			buildPhases = (
+				9F38C751296186D8002E1500 /* Sources */,
+				9F38C752296186D8002E1500 /* Frameworks */,
+				9F38C753296186D8002E1500 /* Resources */,
+				9F38C7C7296186D9002E1500 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F38C795296186D9002E1500 /* PBXTargetDependency */,
+			);
+			name = RandoMidiShifter;
+			productName = RandoMidiShifter;
+			productReference = 9F38C755296186D8002E1500 /* RandoMidiShifter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F38C77B296186D9002E1500 /* RandoMidiShifterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F38C7CB296186D9002E1500 /* Build configuration list for PBXNativeTarget "RandoMidiShifterTests" */;
+			buildPhases = (
+				9F38C778296186D9002E1500 /* Sources */,
+				9F38C779296186D9002E1500 /* Frameworks */,
+				9F38C77A296186D9002E1500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F38C77E296186D9002E1500 /* PBXTargetDependency */,
+			);
+			name = RandoMidiShifterTests;
+			productName = RandoMidiShifterTests;
+			productReference = 9F38C77C296186D9002E1500 /* RandoMidiShifterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F38C785296186D9002E1500 /* RandoMidiShifterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F38C7CE296186D9002E1500 /* Build configuration list for PBXNativeTarget "RandoMidiShifterUITests" */;
+			buildPhases = (
+				9F38C782296186D9002E1500 /* Sources */,
+				9F38C783296186D9002E1500 /* Frameworks */,
+				9F38C784296186D9002E1500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F38C788296186D9002E1500 /* PBXTargetDependency */,
+			);
+			name = RandoMidiShifterUITests;
+			productName = RandoMidiShifterUITests;
+			productReference = 9F38C786296186D9002E1500 /* RandoMidiShifterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9F38C791296186D9002E1500 /* RandoMidiShifterExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F38C7C4296186D9002E1500 /* Build configuration list for PBXNativeTarget "RandoMidiShifterExtension" */;
+			buildPhases = (
+				9F38C78E296186D9002E1500 /* Sources */,
+				9F38C78F296186D9002E1500 /* Frameworks */,
+				9F38C790296186D9002E1500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandoMidiShifterExtension;
+			productName = RandoMidiShifterExtension;
+			productReference = 9F38C792296186D9002E1500 /* RandoMidiShifterExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F38C74D296186D8002E1500 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9F38C754296186D8002E1500 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					9F38C77B296186D9002E1500 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 9F38C754296186D8002E1500;
+					};
+					9F38C785296186D9002E1500 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 9F38C754296186D8002E1500;
+					};
+					9F38C791296186D9002E1500 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 9F38C750296186D8002E1500 /* Build configuration list for PBXProject "RandoMidiShifter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F38C74C296186D8002E1500;
+			productRefGroup = 9F38C756296186D8002E1500 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F38C754296186D8002E1500 /* RandoMidiShifter */,
+				9F38C77B296186D9002E1500 /* RandoMidiShifterTests */,
+				9F38C785296186D9002E1500 /* RandoMidiShifterUITests */,
+				9F38C791296186D9002E1500 /* RandoMidiShifterExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F38C753296186D8002E1500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F38C774296186D8002E1500 /* Preview Assets.xcassets in Resources */,
+				9F38C776296186D9002E1500 /* Assets.xcassets in Resources */,
+				9F38C760296186D8002E1500 /* Synth.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F38C77A296186D9002E1500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F38C784296186D9002E1500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F38C790296186D9002E1500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F38C7A9296186D9002E1500 /* RandoMidiShifterExtensionAUProcessHelper.hpp in Resources */,
+				9F38C7BC296186D9002E1500 /* AudioUnitViewController.xib in Resources */,
+				9F38C798296186D9002E1500 /* README.md in Resources */,
+				9F38C7B0296186D9002E1500 /* RandoMidiShifterExtensionDSPKernel.hpp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F38C751296186D8002E1500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F38C771296186D8002E1500 /* RandoMidiShifterApp.swift in Sources */,
+				9F38C76D296186D8002E1500 /* AudioUnitHostModel.swift in Sources */,
+				9F38C76F296186D8002E1500 /* AudioUnitViewModel.swift in Sources */,
+				9F38C759296186D8002E1500 /* ContentView.swift in Sources */,
+				9F38C75D296186D8002E1500 /* ViewControllerRepresentable.swift in Sources */,
+				9F38C76A296186D8002E1500 /* StringHelpers.swift in Sources */,
+				9F38C765296186D8002E1500 /* MIDIManager.swift in Sources */,
+				9F38C767296186D8002E1500 /* TypeAliases.swift in Sources */,
+				9F38C762296186D8002E1500 /* SimplePlayEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F38C778296186D9002E1500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F38C781296186D9002E1500 /* RandoMidiShifterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F38C782296186D9002E1500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F38C78D296186D9002E1500 /* RandoMidiShifterUITestsLaunchTests.swift in Sources */,
+				9F38C78B296186D9002E1500 /* RandoMidiShifterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F38C78E296186D9002E1500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F38C7AD296186D9002E1500 /* Parameters.swift in Sources */,
+				9F38C7B3296186D9002E1500 /* RandoMidiShifterExtensionMainView.swift in Sources */,
+				9F38C7B5296186D9002E1500 /* MomentaryButton.swift in Sources */,
+				9F38C7BE296186D9002E1500 /* ObservableAUParameter.swift in Sources */,
+				9F38C7A6296186D9002E1500 /* RandoMidiShifterExtensionAudioUnit.mm in Sources */,
+				9F38C7C0296186D9002E1500 /* AudioUnitViewController.swift in Sources */,
+				9F38C7B7296186D9002E1500 /* ParameterSlider.swift in Sources */,
+				9F38C79D296186D9002E1500 /* ParameterSpecBase.swift in Sources */,
+				9F38C7A0296186D9002E1500 /* CrossPlatform.swift in Sources */,
+				9F38C7A2296186D9002E1500 /* String+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F38C77E296186D9002E1500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F38C754296186D8002E1500 /* RandoMidiShifter */;
+			targetProxy = 9F38C77D296186D9002E1500 /* PBXContainerItemProxy */;
+		};
+		9F38C788296186D9002E1500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F38C754296186D8002E1500 /* RandoMidiShifter */;
+			targetProxy = 9F38C787296186D9002E1500 /* PBXContainerItemProxy */;
+		};
+		9F38C795296186D9002E1500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F38C791296186D9002E1500 /* RandoMidiShifterExtension */;
+			targetProxy = 9F38C794296186D9002E1500 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F38C7BA296186D9002E1500 /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F38C7BB296186D9002E1500 /* Base */,
+			);
+			name = AudioUnitViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F38C7C2296186D9002E1500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F38C7C3296186D9002E1500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9F38C7C5296186D9002E1500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RM28WYT6X;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RandoMidiShifterExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RandoMidiShifterExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Egozi.RandoMidiShifter.RandoMidiShifterExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RandoMidiShifterExtension/Common/RandoMidiShifterExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9F38C7C6296186D9002E1500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RM28WYT6X;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RandoMidiShifterExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RandoMidiShifterExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Egozi.RandoMidiShifter.RandoMidiShifterExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RandoMidiShifterExtension/Common/RandoMidiShifterExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9F38C7C9296186D9002E1500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RandoMidiShifter/RandoMidiShifter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RandoMidiShifter/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RM28WYT6X;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RandoMidiShifter;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Egozi.RandoMidiShifter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9F38C7CA296186D9002E1500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RandoMidiShifter/RandoMidiShifter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RandoMidiShifter/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RM28WYT6X;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RandoMidiShifter;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Egozi.RandoMidiShifter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9F38C7CC296186D9002E1500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RM28WYT6X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Egozi.RandoMidiShifterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandoMidiShifter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RandoMidiShifter";
+			};
+			name = Debug;
+		};
+		9F38C7CD296186D9002E1500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RM28WYT6X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Egozi.RandoMidiShifterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandoMidiShifter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RandoMidiShifter";
+			};
+			name = Release;
+		};
+		9F38C7CF296186D9002E1500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RM28WYT6X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Egozi.RandoMidiShifterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RandoMidiShifter;
+			};
+			name = Debug;
+		};
+		9F38C7D0296186D9002E1500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RM28WYT6X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Egozi.RandoMidiShifterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RandoMidiShifter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F38C750296186D8002E1500 /* Build configuration list for PBXProject "RandoMidiShifter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F38C7C2296186D9002E1500 /* Debug */,
+				9F38C7C3296186D9002E1500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F38C7C4296186D9002E1500 /* Build configuration list for PBXNativeTarget "RandoMidiShifterExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F38C7C5296186D9002E1500 /* Debug */,
+				9F38C7C6296186D9002E1500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F38C7C8296186D9002E1500 /* Build configuration list for PBXNativeTarget "RandoMidiShifter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F38C7C9296186D9002E1500 /* Debug */,
+				9F38C7CA296186D9002E1500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F38C7CB296186D9002E1500 /* Build configuration list for PBXNativeTarget "RandoMidiShifterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F38C7CC296186D9002E1500 /* Debug */,
+				9F38C7CD296186D9002E1500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F38C7CE296186D9002E1500 /* Build configuration list for PBXNativeTarget "RandoMidiShifterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F38C7CF296186D9002E1500 /* Debug */,
+				9F38C7D0296186D9002E1500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F38C74D296186D8002E1500 /* Project object */;
+}
