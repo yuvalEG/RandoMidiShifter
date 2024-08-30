@@ -1,3 +1,4 @@
 # RandoMidiShifter
-a MIDI plugin I need to make for a musical piece
-Most of the code is written by chatGPT
+chatGPT-made MIDI plugin I need for a musical piece
+based on JUCE framework
+the code is written by an early version of chatGPT
